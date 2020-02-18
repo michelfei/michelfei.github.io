@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: michelfei.github.io/sitemap.xml

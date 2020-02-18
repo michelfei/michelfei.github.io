@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michel&#39;s</title>
+    <link>michelfei.github.io/</link>
+    <description>Recent content on Michel&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="michelfei.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>michelfei.github.io/about/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/about/</guid>
+      
+        <description>&lt;p&gt;Email:michelfei@aol.com&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>工程应力应变与真实应力应变</title>
+      <link>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</link>
+      <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</guid>
+      
+        <description>&lt;p&gt;因为有限元分析中要用到一些材料力学方面的知识，因为没学过塑性力学所以了解了一下相关知识，本文视作自己记录之用，以后还可以翻翻，省得再去找一堆资料了。&lt;/p&gt;
+&lt;p&gt;首先，材料力学中工程应力定义为：&lt;/p&gt;
+&lt;p&gt;$$\sigma = \frac{F}{A_0}$$&lt;/p&gt;
+&lt;p&gt;式中$A_{0}$为初始横截面面积，$F$为拉伸试验的作用力。&lt;/p&gt;
+&lt;p&gt;工程应变的定义公式为：&lt;/p&gt;
+&lt;p&gt;$$\varepsilon = \frac{l-l_0}{l_0}= \frac{\Delta l}{l_0}$$&lt;/p&gt;
+&lt;p&gt;式中$l_0$为初始长度，$l$ 为拉伸后长度。&lt;/p&gt;
+&lt;p&gt;根据拉伸试验可以得到以下大致的关系图：（请原谅我盗个图）&lt;/p&gt;
+&lt;p&gt;╭( ′• o •′ )╭☞警察叔叔！就是这个人(｡•ˇ‸ˇ•｡)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pic.ffsky.net/image/ILw&#34;&gt;&lt;img src=&#34;http://pic.ffsky.net/images/2016/08/24/64bfaad34ff581340fff5626c4f0ebb0.md.jpg&#34; alt=&#34;64bfaad34ff581340fff5626c4f0ebb0.md.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在实际的拉伸过程中材料会发生颈缩现象，横截面积在变化，所以工程应力应变并不能准确反映材料在拉升过程中的变化。根据工程应力的定义我们可以得出真实应力的定义公式：&lt;/p&gt;
+&lt;p&gt;$\sigma_T = \frac{F}{A_T}$&lt;/p&gt;
+&lt;p&gt;式中 $A_T$ 表示在拉伸过程中的实际横截面积。&lt;/p&gt;
+&lt;p&gt;对于大多数金属来说,根据不可压缩性,可以得到以下公式：&lt;/p&gt;
+&lt;p&gt;$l_0A_0=lA_T$&lt;/p&gt;
+&lt;p&gt;$$\therefore A_T=\frac{l_0A_0}{l}$$&lt;/p&gt;
+&lt;p&gt;代入真实应力定义公式有：&lt;/p&gt;
+&lt;p&gt;$$\sigma_T = \frac{Fl}{A_0l_0}= \sigma \frac{l}{l_0}$$&lt;/p&gt;
+&lt;p&gt;根据工程应变定义可以得到：&lt;/p&gt;
+&lt;p&gt;$$\frac{l}{l_0}=1+ \varepsilon$$&lt;/p&gt;
+&lt;p&gt;$$\therefore \sigma_T=\sigma(1+\varepsilon)$$&lt;/p&gt;
+&lt;p&gt;这个公式就是真实应力与工程应力应变的关系&lt;/p&gt;
+&lt;p&gt;对于真实应变，首先我们可以根据定义得出单位时间内的应变为：&lt;/p&gt;
+&lt;p&gt;$$\Delta\varepsilon = \frac{\Delta l}{l}$$&lt;/p&gt;
+&lt;p&gt;式中$$l$$为拉伸过程中的长度。上面这个式子可以写成：&lt;/p&gt;
+&lt;p&gt;$$d\varepsilon_T = \frac{dl}{l}$$&lt;/p&gt;
+&lt;p&gt;有木有感觉到还是熟悉的味道，还是熟悉的配方,来个积分就变成了以下这个模样：&lt;/p&gt;
+&lt;p&gt;$$\int d\varepsilon_T = \int_{l_0}^{l}\frac{\mathrm{dl}}{l}$$&lt;/p&gt;
+&lt;p&gt;然后就有：&lt;/p&gt;
+&lt;p&gt;$$\varepsilon_T = \int_{l_0}^{l}\frac{\mathrm{dl}}{l} = ln \frac{l}{l_0}$$&lt;/p&gt;
+&lt;p&gt;这个就是真实应变的计算公式。然后根据工程应变公式就可以得到真实应变与工程应变的关系式：&lt;/p&gt;
+&lt;p&gt;$$\varepsilon_T = ln(1+ \varepsilon)$$&lt;/p&gt;
+&lt;p&gt;我们再看看工程应变和真实应变到底相差多少,这里要用到我一直很讨厌的泰勒级数展开（可惜不是斯威夫特）：&lt;/p&gt;
+&lt;p&gt;$$\varepsilon_T = ln(1+ \varepsilon)= \varepsilon - \frac{\varepsilon ^2}{2} + \frac{\varepsilon ^3}{3}- \frac{\varepsilon ^4}{4}+ \cdots$$&lt;/p&gt;
+&lt;p&gt;从这里可以看出当变形程度很小时（大致10%），$$\varepsilon_T$$和$$\varepsilon$$几乎相等。&lt;/p&gt;
+&lt;p&gt;经过上面的一堆吧啦吧啦和巴巴拉魔法后，只要记住两个关系公式就行了：&lt;/p&gt;
+&lt;p&gt;$$\sigma_T=\sigma(1+\varepsilon)$$&lt;/p&gt;
+&lt;p&gt;$$\varepsilon_T = ln(1+ \varepsilon)$$&lt;/p&gt;
+&lt;p&gt;来看个直观一点的曲线图吧：（咳咳，你懂的）&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://pic.ffsky.net/image/IGs&#34;&gt;&lt;img src=&#34;http://pic.ffsky.net/images/2016/08/26/7190d6adbaf4cc43f10a046f5a3a8204.md.jpg&#34; alt=&#34;7190d6adbaf4cc43f10a046f5a3a8204.md.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;图中Corrected曲线是考虑到颈缩之后复杂的截面状况做的修正，其实我也不懂(＠_＠;)，哇哈哈,以后再深究。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>solidworks中钣金折弯系数设置</title>
+      <link>michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</guid>
+      
+        <description>&lt;p&gt;solidworks中钣金展开折弯的计算方法有三种：&lt;strong&gt;折弯系数&lt;/strong&gt;、&lt;strong&gt;折弯扣除&lt;/strong&gt;、&lt;strong&gt;K因子&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩小，外侧的拉伸由外向内也逐渐向内缩小，在接近板厚的中心处压缩与拉伸接近于零板厚中间的这个面叫&lt;strong&gt;中性层&lt;/strong&gt;。根据中性层的定义，由此引伸出了以上三种钣金折弯的计算方法。&lt;/p&gt;
+&lt;h2 id=&#34;k-因子&#34;&gt;\(K\) 因子&lt;/h2&gt;
+&lt;p&gt;所谓$$K$$因子，其实就是中性层到内表面的距离与材料厚度的比值即$$K=t/T$$，具体如下图所示：
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170929091531344.png&#34; alt=&#34;k-yinzi&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;折弯系数&#34;&gt;折弯系数&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170908203438800.png&#34; alt=&#34;zhewanxishu&#34;&gt;
+根据上图所示，钣金展开的长度为$$L_t=A+B+BA$$，其中$$L_t$$是展开长度，$$BA$$是折弯系数。&lt;/p&gt;
+&lt;p&gt;折弯系数$$BA$$则是根据中性层计算而来：$$BA=\frac{\pi\cdot(R+K\cdot T)\cdot A}{180}$$&lt;/p&gt;
+&lt;p&gt;根据公式我们可以发现折弯系数其实就是折弯沿着中性层的测量的弧长。&lt;/p&gt;
+&lt;h2 id=&#34;折弯扣除&#34;&gt;折弯扣除&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170908203633784.png&#34; alt=&#34;zhewankouchu&#34;&gt;
+同样根据上图所示，此钣金展开长度为$$L_t=A+B-BD$$，其中$$L_t$$是展开长度，$$BD$$是折弯扣除。根据折弯系数的概念我们不难知道，所谓折弯扣除就是如图示中外侧边延长到虚拟交点的两段距离之和与折弯系数的差值，即：&lt;/p&gt;
+&lt;p&gt;$$BD=2\cdot L_B-BA$$&lt;/p&gt;
+&lt;p&gt;其中$$L_B$$为外侧边延长到虚拟交点的距离&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>solidworks利用链阵列装配拖链</title>
+      <link>michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</guid>
+      
+        <description>&lt;p&gt;solidworks2015开始增加了链阵列功能，我们可以很方便的利用这个阵列进行链条和拖链的装配。利用链阵列装配的模型可以用在做动画。我下面就给出拖链装配的大致过程。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;建立基本模型&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;为了演示方便我就大概画了一个简易的支撑。具体的支撑方式还是看自己的实际建模为准。当然这个支撑是画了两个方块装配好的，沿着长度方向不要进行约束，其余约束就不在赘述了。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222304460.png&#34; alt=&#34;支架&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;绘制拖链轨迹线&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;新建零件模型，在&lt;strong&gt;新的零件模型&lt;/strong&gt;里绘制轨迹线草图。本文主要讲画法，所以关于拖链选型什么的不提。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-2017061722245760.png&#34; alt=&#34;轨迹线&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;插入轨迹线零件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;将刚才的绘制的轨迹线的零件插入到总装配体中，注意需要几个基本的平行约束，保证后续链阵列不容易出错
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222550494.png&#34; alt=&#34;装配&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;插入拖链关节&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;插入拖链关节后进行约束，保证关节侧面1面和轨迹线的侧面2面平行。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222618973.png&#34; alt=&#34;面&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;链阵列&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在装配体选项菜单中有“阵零部件阵列”，总共有3种搭接方式，第二和第三种都可以用在这次拖链的装配上。但是建模过程最好要符合设计意图，所以这次我选择了第三种方式。
+首先，利用&amp;quot;selectionmanager&amp;quot;选择好轨迹线，并确认阵列方向。
+其次，根据下面的提示，选择阵列的零部件和连接的关节圆柱面。这里需要注意的是选择合适的路径对齐面，我一般选择关节零件中心对称面或者前后关节旋转的接触面。然后就完成拖链关节的基本装配部分了。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222648251.png&#34; alt=&#34;阵列&#34;&gt;
+然后就完成拖链关节的基本装配部分了。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222839952.png&#34; alt=&#34;关节&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;插入拖链的安装关节&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其实链阵列本身的操作到上面就结束了，但是做事还是有始有终吧。把拖链的两头的安装关节插入进来进行装配。最后将一头的拖链固定约束，整个过程就完成了。但是这里会出现一点问题，有的人在这步装配的时候会发现明明配合选择没错但是还是经常出现配合错误，造成这种问题的基本原因就是，电脑不行！那怎么办呢？最好的的办法就是配合前先自己手动移动到合适位置，越接近正确越好，这样电脑计算重建模型时间会大大缩短，基本不会出现错误。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170617222910113.png&#34; alt=&#34;最后&#34;&gt;&lt;/p&gt;
+&lt;p&gt;基本步骤以上。这种链阵列的好处就是可柔性装配，会有非常直观的效果。但是这种装配对电脑要求也不算小，静态装配可能没啥问题，要做动画了对电脑要求就高了。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>teamviewer简单教程</title>
+      <link>michelfei.github.io/post/2018-04-15-teamviewer%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2018-04-15-teamviewer%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
+      
+        <description>&lt;h2 id=&#34;安装&#34;&gt;安装&lt;/h2&gt;
+&lt;p&gt;Teamviewer是一款大名鼎鼎的远程控制软件，个人使用免费。我们可以通过简单的设置就可以远程控制电脑，适合各种不同需求的人来使用。现在我就直接进入正题，简单的说说怎么安装使用。&lt;/p&gt;
+&lt;p&gt;首先到teamviewer的官网&lt;a href=&#34;https://www.teamviewer.com/zhcn/download/windows/&#34;&gt;下载&lt;/a&gt;页面去下载软件
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416020301827.png&#34; alt=&#34;teamviewer&#34;&gt;&lt;/p&gt;
+&lt;p&gt;下载完成之后，右击安装程序，单击”&lt;strong&gt;以管理员身份运行&lt;/strong&gt;”，然后会弹出警告窗口，单击“&lt;strong&gt;运行&lt;/strong&gt;”就会出现下面的界面，这里我就盗个图吧。按照图中来选择，然后单击“&lt;strong&gt;接受并完成&lt;/strong&gt;”。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-2018041602231113.png&#34; alt=&#34;2&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置&#34;&gt;设置&lt;/h2&gt;
+&lt;p&gt;等待完成安装后单击“关闭”，软件的安装就到此为止完成了。下面进入软件设置部分。这里我只挑用的最多的两个部分来说，其它类似远程唤醒之类以后有空再研究吧。打开软就会出现下面的界面了，
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416024130857.png&#34; alt=&#34;3&#34;&gt;
+界面分三栏，最左边是项目栏，中间一栏是本机的ID和密码，其它的客户端可以通过输入本机的ID和密码来控制这台电脑，所以不要轻易告诉别人ID和密码。最右边一栏可以输入其它客户端的ID和密码达到远程控制其它电脑的目的。&lt;/p&gt;
+&lt;p&gt;如果一个人拥有几台终端，比如服务器、电脑、手机或者平板等，通过输入ID和密码来互相控制是非常麻烦的。我们可以注册teamviewer的账户，将不同的终端加到一起，就可以通过简单的选择来切换终端了。单击上图的头像就会切换到登录界面。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416025334179.png&#34; alt=&#34;4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;对于第一次使用的用户，单击&amp;quot;注册&amp;quot;就会出现注册窗口。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-2018041602583195.png&#34; alt=&#34;5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;填写各种信息，单击“下一步”。然后会弹出计算名称和密码的设置窗口，这个看个人需求，如果不需要密码，把密码空着，设置好继续下一步，最后点击结束。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416031136753.png&#34; alt=&#34;6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;设置完成后，必须到注册邮箱会收到一份激活邮件，点击里面的链接并显示激活成功才算是真正的激活了账户。一般来说邮件会很快收到，假如一直没收到，可以到邮箱的垃圾邮件或广告邮件的文件夹去看下。这样这台电脑的设置就算完成了&lt;/p&gt;
+&lt;p&gt;到另外一台电脑上安装相同的软件，然后登录账户，如果是第一次在这台电脑上登录会出现弹出一个框告诉你去邮箱确认添加并信任设备。这次再到邮箱去查看，&lt;strong&gt;注意可能会发到垃圾邮件或广告邮件甚至订阅邮件文件夹里&lt;/strong&gt;，接着邮件里面单击“添加信任设备”。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416033947156.png&#34; alt=&#34;7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;弹出的浏览器里面会出现下图，单击“添加设备”，添加成功后，就可以重新登录了，正常情况下就可以成功登录账户。第二台电脑就这样设置好了，以此类推可以添加其它的客户端，比如手机或者平板都是一样的操作。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416034227202.png&#34; alt=&#34;8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当两台电脑同时登录一个账号，并在最左栏选择计算机和联系人时会有下图，此时就可以连接你想要连接的电脑了。设备的管理除了可以通过软件来管理，也可以通过&lt;a href=&#34;https://login.teamviewer.com/&#34;&gt;官方网页&lt;/a&gt;登录来管理。
+&lt;img src=&#34;http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20180416041750896.png&#34; alt=&#34;9&#34;&gt;&lt;/p&gt;
+&lt;p&gt;值得注意的是这种简单设置下一旦从机进入睡眠状态就会掉线，主机就无法对其进行控制了，所以在电源管理中要将睡眠取消。当然最终还是有远程唤醒的方法，但是这需要更进一步的尝试了，暂时就到这里吧。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>气缸耗气量计算</title>
+      <link>michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
+      
+        <description>&lt;p&gt;最近因为工作的关系需要计算气缸的耗气量，《现代实用气动技术》（SMC公司编写）中气缸最大耗气量公式为：
+$$
+\tag{1} Q_c=0.046D^2u_m(p+0.012)
+$$&lt;/p&gt;
+&lt;p&gt;$Q_c$：气缸最大耗气量，$L/min$（ANR)&lt;br&gt;
+$D$：气缸缸径，$cm$&lt;br&gt;
+$u_m$：气缸最大速度，$mm/s$&lt;br&gt;
+$p$：使用压力，$Mpa$&lt;/p&gt;
+&lt;p&gt;这个公式（1）在书中没有给出推导过程，我一直纠结这个公式到底是否适用于所有气缸还是只能用与SMC的气缸。后来我看到了机械设计手册上的公式经过推敲后发现这个公式可用于所有气缸。下面根据机械设计手册上的方法来推导上面的（1）式。&lt;/p&gt;
+&lt;p&gt;机械设计手册上对气缸耗气量的计算是逐步进行的，首先先计算气缸所需&lt;strong&gt;压缩空气&lt;/strong&gt;的量，有如下两个公式：
+$$
+\tag{2} Q_{v_1}=\frac{\pi}{4}\cdot\frac{D^2S}{t_1}
+$$
+$$
+\tag{3} Q_{v_2}=\frac{\pi}{4}\cdot\frac{(D-d)^2S}{t_2}
+$$
+$Q_v$：每秒压缩空气消耗量，$m^3/s$；当是双作用气缸或单作用气缸无杠腔工作或柱塞缸工作时$Q_v=Q_{v_1}$；当气缸有杆腔工作时$Q_v=Q_{v_2}$&lt;br&gt;
+$Q_{v_1}$：缸前进时（杆伸出）无杆腔（包括柱塞缸）压缩空气消耗量，$m^3/s$&lt;br&gt;
+$Q_{v_2}$：缸后退时（杆缩回）有杆腔压缩空气消耗量，$m^3/s$&lt;br&gt;
+$D$：气缸内径（柱塞缸的柱塞内径），$m$
+$d$：活塞杆直径，$m$&lt;br&gt;
+$t_1$：杆伸出时间，$s$&lt;br&gt;
+$t_2$：杆缩回时间，$s$&lt;/p&gt;
+&lt;p&gt;上面的公式摘自机械设计手册，如果我们把压缩空气作用的腔简称作用腔的话，压缩空气的空气消耗量简单来说就是作用腔在单位时间内的容积。由于气缸活塞的实际速度不是匀速，所以（2）和（3）求的值是平均值。我们在选型时需要按照最大的压缩空气需求量来计算，根据（2）和（3）我们可以得到以下两个公式：
+$$Q_{v_1max}=\frac{\pi}{4}D^2V_{max}\tag{4}$$
+$$Q_{v_2max}=\frac{\pi}{4}(D-d)^2V_{max}\tag{5}$$
+$V_{max}$：活塞运动时的最大速度，$m/s$&lt;/p&gt;
+&lt;p&gt;我们假设考虑在&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

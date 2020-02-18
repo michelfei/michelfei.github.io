@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Michel&#39;s</title>
+    <link>michelfei.github.io/post/</link>
+    <description>Recent content in Posts on Michel&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="michelfei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>工程应力应变与真实应力应变</title>
+      <link>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</link>
+      <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</guid>
+      <description>因为有限元分析中要用到一些材料力学方面的知识，因为没学过塑性力学所以了解了一下相关知识，本文视作自己记录之用，以后还可以翻翻，省得再去找一堆</description>
+    </item>
+    
+    <item>
+      <title>solidworks中钣金折弯系数设置</title>
+      <link>michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</guid>
+      <description>solidworks中钣金展开折弯的计算方法有三种：折弯系数、折弯扣除、K因子。 钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩</description>
+    </item>
+    
+    <item>
+      <title>solidworks利用链阵列装配拖链</title>
+      <link>michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</guid>
+      <description>solidworks2015开始增加了链阵列功能，我们可以很方便的利用这个阵列进行链条和拖链的装配。利用链阵列装配的模型可以用在做动画。我下</description>
+    </item>
+    
+    <item>
+      <title>teamviewer简单教程</title>
+      <link>michelfei.github.io/post/2018-04-15-teamviewer%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2018-04-15-teamviewer%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</guid>
+      <description>安装 Teamviewer是一款大名鼎鼎的远程控制软件，个人使用免费。我们可以通过简单的设置就可以远程控制电脑，适合各种不同需求的人来使用。现</description>
+    </item>
+    
+    <item>
+      <title>气缸耗气量计算</title>
+      <link>michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
+      <description>最近因为工作的关系需要计算气缸的耗气量，《现代实用气动技术》（SMC公司编写）中气缸最大耗气量公式为： $$ \tag{1} Q_c=0.046D^2u_m(p+0.012) $$ $Q_c$：气缸最大耗气量，$</description>
+    </item>
+    
+  </channel>
+</rss>
