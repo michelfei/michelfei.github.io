@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: michelfei.github.io/sitemap.xml
+Sitemap: https://michelfei.github.io/sitemap.xml

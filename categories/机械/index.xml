@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>机械 on Michel&#39;s</title>
-    <link>michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/</link>
+    <link>https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/</link>
     <description>Recent content in 机械 on Michel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Aug 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>工程应力应变与真实应力应变</title>
-      <link>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</link>
+      <link>https://michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</link>
       <pubDate>Fri, 26 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</guid>
+      <guid>https://michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/</guid>
       <description>因为有限元分析中要用到一些材料力学方面的知识，因为没学过塑性力学所以了解了一下相关知识，本文视作自己记录之用，以后还可以翻翻，省得再去找一堆</description>
     </item>
     
