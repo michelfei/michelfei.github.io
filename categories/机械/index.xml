@@ -6,10 +6,37 @@
     <description>Recent content in 机械 on Michel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Aug 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>气缸耗气量计算</title>
+      <link>https://michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
+      <description>最近因为工作的关系需要计算气缸的耗气量，《现代实用气动技术》（SMC公司编写）中气缸最大耗气量公式为： $$ \tag{1} Q_c=0.046D^2u_m(p+0.012) $$ $Q_c$：气缸最大耗气量，$</description>
+    </item>
+    
+    <item>
+      <title>solidworks中钣金折弯系数设置</title>
+      <link>https://michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</guid>
+      <description>solidworks中钣金展开折弯的计算方法有三种：折弯系数、折弯扣除、K因子。 钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩</description>
+    </item>
+    
+    <item>
+      <title>solidworks利用链阵列装配拖链</title>
+      <link>https://michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</guid>
+      <description>solidworks2015开始增加了链阵列功能，我们可以很方便的利用这个阵列进行链条和拖链的装配。利用链阵列装配的模型可以用在做动画。我下</description>
+    </item>
     
     <item>
       <title>工程应力应变与真实应力应变</title>

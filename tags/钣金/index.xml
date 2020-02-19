@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>钣金 on Michel&#39;s</title>
+    <link>https://michelfei.github.io/tags/%E9%92%A3%E9%87%91/</link>
+    <description>Recent content in 钣金 on Michel&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 12 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://michelfei.github.io/tags/%E9%92%A3%E9%87%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>solidworks中钣金折弯系数设置</title>
+      <link>https://michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://michelfei.github.io/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/</guid>
+      <description>solidworks中钣金展开折弯的计算方法有三种：折弯系数、折弯扣除、K因子。 钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩</description>
+    </item>
+    
+  </channel>
+</rss>

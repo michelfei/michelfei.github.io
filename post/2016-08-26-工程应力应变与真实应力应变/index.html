@@ -69,7 +69,7 @@
 <meta itemprop="description" content="因为有限元分析中要用到一些材料力学方面的知识，因为没学过塑性力学所以了解了一下相关知识，本文视作自己记录之用，以后还可以翻翻，省得再去找一堆">
 <meta itemprop="datePublished" content="2016-08-26T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2016-08-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="808">
+<meta itemprop="wordCount" content="806">
 
 
 
@@ -305,7 +305,7 @@
             <a href="https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/"> 机械 </a>
             
           </div>
-        <span class="more-meta"> 808 words </span>
+        <span class="more-meta"> 806 words </span>
           <span class="more-meta"> 2 min read </span>
 
         
@@ -338,10 +338,10 @@
 <p>╭( ′• o •′ )╭☞警察叔叔！就是这个人(｡•ˇ‸ˇ•｡)</p>
 <p><a href="http://pic.ffsky.net/image/ILw"><img src="http://pic.ffsky.net/images/2016/08/24/64bfaad34ff581340fff5626c4f0ebb0.md.jpg" alt="64bfaad34ff581340fff5626c4f0ebb0.md.jpg"></a></p>
 <p>在实际的拉伸过程中材料会发生颈缩现象，横截面积在变化，所以工程应力应变并不能准确反映材料在拉升过程中的变化。根据工程应力的定义我们可以得出真实应力的定义公式：</p>
-<p>$\sigma_T = \frac{F}{A_T}$</p>
+<p>$$\sigma_T = \frac{F}{A_T}$$</p>
 <p>式中 $A_T$ 表示在拉伸过程中的实际横截面积。</p>
 <p>对于大多数金属来说,根据不可压缩性,可以得到以下公式：</p>
-<p>$l_0A_0=lA_T$</p>
+<p>$$l_0A_0=lA_T$$</p>
 <p>$$\therefore A_T=\frac{l_0A_0}{l}$$</p>
 <p>代入真实应力定义公式有：</p>
 <p>$$\sigma_T = \frac{Fl}{A_0l_0}= \sigma \frac{l}{l_0}$$</p>
@@ -361,7 +361,7 @@
 <p>$$\varepsilon_T = ln(1+ \varepsilon)$$</p>
 <p>我们再看看工程应变和真实应变到底相差多少,这里要用到我一直很讨厌的泰勒级数展开（可惜不是斯威夫特）：</p>
 <p>$$\varepsilon_T = ln(1+ \varepsilon)= \varepsilon - \frac{\varepsilon ^2}{2} + \frac{\varepsilon ^3}{3}- \frac{\varepsilon ^4}{4}+ \cdots$$</p>
-<p>从这里可以看出当变形程度很小时（大致10%），$$\varepsilon_T$$和$$\varepsilon$$几乎相等。</p>
+<p>从这里可以看出当变形程度很小时（大致10%），$$\varepsilon_T$$和$\varepsilon$几乎相等。</p>
 <p>经过上面的一堆吧啦吧啦和巴巴拉魔法后，只要记住两个关系公式就行了：</p>
 <p>$$\sigma_T=\sigma(1+\varepsilon)$$</p>
 <p>$$\varepsilon_T = ln(1+ \varepsilon)$$</p>
@@ -405,20 +405,20 @@
       
       <nav class="post-nav">
         
-        
-          <a class="next" href="/post/2017-07-22-solidworks%E4%B8%AD%E9%92%A3%E9%87%91%E6%8A%98%E5%BC%AF%E7%B3%BB%E6%95%B0%E8%AE%BE%E7%BD%AE/">
-            <span class="next-text nav-default">solidworks中钣金折弯系数设置</span>
-            <span class="prev-text nav-mobile">Next</span>
+          <a class="prev" href="/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/">
             
             <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
 </svg>
 
             </i>
+            <span class="prev-text nav-default">solidworks利用链阵列装配拖链</span>
+            <span class="prev-text nav-mobile">Prev</span>
           </a>
+        
       </nav>
     </footer>
   </article>
