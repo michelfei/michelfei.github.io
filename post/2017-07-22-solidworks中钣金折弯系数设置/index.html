@@ -69,7 +69,7 @@
 <meta itemprop="description" content="solidworks中钣金展开折弯的计算方法有三种：折弯系数、折弯扣除、K因子。 钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩">
 <meta itemprop="datePublished" content="2017-08-12T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-08-12T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="477">
+<meta itemprop="wordCount" content="474">
 
 
 
@@ -305,7 +305,7 @@
             <a href="https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/"> 机械 </a>
             
           </div>
-        <span class="more-meta"> 477 words </span>
+        <span class="more-meta"> 474 words </span>
           <span class="more-meta"> 1 min read </span>
 
         
@@ -323,7 +323,7 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#k-因子">$K$ 因子</a></li>
+    <li><a href="#k因子">$K$因子</a></li>
     <li><a href="#折弯系数">折弯系数</a></li>
     <li><a href="#折弯扣除">折弯扣除</a></li>
   </ul>
@@ -335,19 +335,19 @@
     <div class="post-content">
       <p>solidworks中钣金展开折弯的计算方法有三种：<strong>折弯系数</strong>、<strong>折弯扣除</strong>、<strong>K因子</strong>。</p>
 <p>钣金折弯时内侧产生压缩，外侧产生拉伸内侧的压缩由内向外逐渐缩小，外侧的拉伸由外向内也逐渐向内缩小，在接近板厚的中心处压缩与拉伸接近于零板厚中间的这个面叫<strong>中性层</strong>。根据中性层的定义，由此引伸出了以上三种钣金折弯的计算方法。</p>
-<h2 id="k-因子">$K$ 因子</h2>
-<p>所谓$$K$$因子，其实就是中性层到内表面的距离与材料厚度的比值即$K=t/T$，具体如下图所示：
-<img src="http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170929091531344.png" alt="k-yinzi"></p>
+<h2 id="k因子">$K$因子</h2>
+<p>所谓$K$因子，其实就是中性层到内表面的距离与材料厚度的比值即$K=t/T$，具体如下图所示：</p>
+<p><img src="/image/12.png" alt="k-yinzi"></p>
 <h2 id="折弯系数">折弯系数</h2>
-<p><img src="http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170908203438800.png" alt="zhewanxishu">
-根据上图所示，钣金展开的长度为$L_t=A+B+BA$，其中$L_t$是展开长度，$BA$是折弯系数。</p>
-<p>折弯系数$$BA$$则是根据中性层计算而来：$BA=\frac{\pi\cdot(R+K\cdot T)\cdot A}{180}$</p>
+<p><img src="/image/10.png" alt="zhewanxishu"></p>
+<p>根据上图所示，钣金展开的长度为$L_t=A+B+BA$，其中$L_t$是展开长度，$BA$是折弯系数。</p>
+<p>折弯系数$BA$则是根据中性层计算而来：$BA=\frac{\pi\cdot(R+K\cdot T)\cdot A}{180}$</p>
 <p>根据公式我们可以发现折弯系数其实就是折弯沿着中性层的测量的弧长。</p>
 <h2 id="折弯扣除">折弯扣除</h2>
-<p><img src="http://opb2miy2t.bkt.clouddn.com/markdown-img-paste-20170908203633784.png" alt="zhewankouchu">
-同样根据上图所示，此钣金展开长度为$L_t=A+B-BD$，其中$L_t$是展开长度，$$BD$$是折弯扣除。根据折弯系数的概念我们不难知道，所谓折弯扣除就是如图示中外侧边延长到虚拟交点的两段距离之和与折弯系数的差值，即：</p>
+<p><img src="/image/11.png" alt="zhewankouchu"></p>
+<p>同样根据上图所示，此钣金展开长度为$L_t=A+B-BD$，其中$L_t$是展开长度，$BD$是折弯扣除。根据折弯系数的概念我们不难知道，所谓折弯扣除就是如图示中外侧边延长到虚拟交点的两段距离之和与折弯系数的差值，即：</p>
 <p>$$BD=2\cdot L_B-BA$$</p>
-<p>其中$L_B$为外侧边延长到虚拟交点的距离</p>
+<p>其中$L_B$为外侧边延长到虚拟交点的距离。</p>
 
     </div>
 
