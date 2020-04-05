@@ -17,7 +17,7 @@
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://michelfei.github.io/post/2020-02-14-%E6%B0%94%E7%BC%B8%E8%80%97%E6%B0%94%E9%87%8F%E8%AE%A1%E7%AE%97/</guid>
-      <description>最近因为工作的关系需要计算气缸的耗气量，《现代实用气动技术》（SMC公司编写）中气缸最大耗气量公式为： $$ \tag{1} Q_c=0.046D^2u_m(p+0.012) $$ $Q_c$：气缸最大耗气量，$</description>
+      <description>最近因为工作的关系需要计算气缸的耗气量，《现代实用气动技术》（SMC公司编写）中气缸最大耗气量公式为： $$ \tag{1} Q_c=0.046D^2u_m(p+0.102) $$ $Q_c$：气缸最大耗气量，$</description>
     </item>
     
     <item>
