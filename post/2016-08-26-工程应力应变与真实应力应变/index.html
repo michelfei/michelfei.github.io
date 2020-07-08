@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.64.1" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://michelfei.github.io/post/2016-08-26-%E5%B7%A5%E7%A8%8B%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98%E4%B8%8E%E7%9C%9F%E5%AE%9E%E5%BA%94%E5%8A%9B%E5%BA%94%E5%8F%98/" />
@@ -53,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.0995afa14b62cd93e93cfc066b646c4c17a3eddca0e9d52a1d9dcf5d90aaacd3.css" integrity="sha256-CZWvoUtizZPpPPwGa2RsTBej7dyg6dUqHZ3PXZCqrNM=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.fa3d941d1d0e0ddc985804227feabffea55c89883eb0af34e0532a7ae9135151.css" integrity="sha256-&#43;j2UHR0ODdyYWAQif&#43;q//qVciYg&#43;sK804FMqeukTUVE=" media="screen" crossorigin="anonymous">
 
 
 
@@ -69,7 +69,7 @@
 <meta itemprop="description" content="因为有限元分析中要用到一些材料力学方面的知识，因为没学过塑性力学所以了解了一下相关知识，本文视作自己记录之用，以后还可以翻翻，省得再去找一堆">
 <meta itemprop="datePublished" content="2016-08-26T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2016-08-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="806">
+<meta itemprop="wordCount" content="802">
 
 
 
@@ -305,7 +305,7 @@
             <a href="https://michelfei.github.io/categories/%E6%9C%BA%E6%A2%B0/"> 机械 </a>
             
           </div>
-        <span class="more-meta"> 806 words </span>
+        <span class="more-meta"> 802 words </span>
           <span class="more-meta"> 2 min read </span>
 
         
@@ -340,7 +340,7 @@
 <p>式中$l_0$为初始长度，$l$ 为拉伸后长度。</p>
 <p>根据拉伸试验可以得到以下大致的关系图：（请原谅我盗个图）</p>
 <p>╭( ′• o •′ )╭☞警察叔叔！就是这个人(｡•ˇ‸ˇ•｡)</p>
-<p><a href="http://pic.ffsky.net/image/ILw"><img src="http://pic.ffsky.net/images/2016/08/24/64bfaad34ff581340fff5626c4f0ebb0.md.jpg" alt="64bfaad34ff581340fff5626c4f0ebb0.md.jpg"></a></p>
+<p><img src="/image/23.jpg" alt="figure 1"></p>
 <p>在实际的拉伸过程中材料会发生颈缩现象，横截面积在变化，所以工程应力应变并不能准确反映材料在拉升过程中的变化。根据工程应力的定义我们可以得出真实应力的定义公式：</p>
 <p>$$\sigma_T = \frac{F}{A_T}$$</p>
 <p>式中 $A_T$ 表示在拉伸过程中的实际横截面积。</p>
@@ -355,7 +355,7 @@
 <p>这个公式就是真实应力与工程应力应变的关系</p>
 <p>对于真实应变，首先我们可以根据定义得出单位时间内的应变为：</p>
 <p>$$\Delta\varepsilon = \frac{\Delta l}{l}$$</p>
-<p>式中$$l$$为拉伸过程中的长度。上面这个式子可以写成：</p>
+<p>式中$l$为拉伸过程中的长度。上面这个式子可以写成：</p>
 <p>$$d\varepsilon_T = \frac{dl}{l}$$</p>
 <p>有木有感觉到还是熟悉的味道，还是熟悉的配方,来个积分就变成了以下这个模样：</p>
 <p>$$\int d\varepsilon_T = \int_{l_0}^{l}\frac{\mathrm{dl}}{l}$$</p>
@@ -365,12 +365,12 @@
 <p>$$\varepsilon_T = ln(1+ \varepsilon)$$</p>
 <p>我们再看看工程应变和真实应变到底相差多少,这里要用到我一直很讨厌的泰勒级数展开（可惜不是斯威夫特）：</p>
 <p>$$\varepsilon_T = ln(1+ \varepsilon)= \varepsilon - \frac{\varepsilon ^2}{2} + \frac{\varepsilon ^3}{3}- \frac{\varepsilon ^4}{4}+ \cdots$$</p>
-<p>从这里可以看出当变形程度很小时（大致10%），$$\varepsilon_T$$和$\varepsilon$几乎相等。</p>
+<p>从这里可以看出当变形程度很小时（大致10%），$\varepsilon_T$和$\varepsilon$几乎相等。</p>
 <p>经过上面的一堆吧啦吧啦和巴巴拉魔法后，只要记住两个关系公式就行了：</p>
 <p>$$\sigma_T=\sigma(1+\varepsilon)$$</p>
 <p>$$\varepsilon_T = ln(1+ \varepsilon)$$</p>
 <p>来看个直观一点的曲线图吧：（咳咳，你懂的）</p>
-<p><a href="http://pic.ffsky.net/image/IGs"><img src="http://pic.ffsky.net/images/2016/08/26/7190d6adbaf4cc43f10a046f5a3a8204.md.jpg" alt="7190d6adbaf4cc43f10a046f5a3a8204.md.jpg"></a></p>
+<p><img src="/image/24.jpg" alt="figure 2"></p>
 <p>图中Corrected曲线是考虑到颈缩之后复杂的截面状况做的修正，其实我也不懂(＠_＠;)，哇哈哈,以后再深究。</p>
 
     </div>
