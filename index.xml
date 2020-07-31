@@ -6,7 +6,7 @@
     <description>Recent content on Michel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 13:18:43 +0800</lastBuildDate>
     
         <atom:link href="https://michelfei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,53 @@
       <guid>https://michelfei.github.io/about/</guid>
       
         <description>&lt;p&gt;Welcome to Michel&amp;rsquo;s Blog!&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>浴盆曲线</title>
+      <link>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</link>
+      <pubDate>Sun, 12 Jul 2020 13:18:43 +0800</pubDate>
+      
+      <guid>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</guid>
+      
+        <description>&lt;p&gt;在理解什么是浴盆曲线前先看下什么是失效率（failure rate）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;失效率&lt;em&gt;failure rate&lt;/em&gt;&lt;/strong&gt;为工程系统或产品失效的频率。单位为每小时失效次数。&lt;/p&gt;
+&lt;p&gt;况下失效率指的是平均失效率，具有统计学的概念。比如在1000小时内1000个产品有1个失效，这个产品的失效率为0.0001%每小时。&lt;/p&gt;
+&lt;h2 id=&#34;什么是浴盆曲线&#34;&gt;什么是浴盆曲线&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://michelfei.github.io/image/25.jpg&#34; alt=&#34;bathtub curve&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;浴盆曲线&lt;em&gt;bathtub curve&lt;/em&gt;&lt;/strong&gt;是指产品在在生命周期内的失效率变化曲线。因长的像浴盆而得名，当然你想叫它浴缸曲线也可以。&lt;/p&gt;
+&lt;p&gt;浴盆曲线分为三个阶段：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;早期失效，此时产品处于刚上市或刚开始磨合阶段会有比较高的失效率。此时的失效原因往往是由于设计或制造工艺等源头问题造成的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;随机失效，或者叫偶然失效。随着质量的提升产品的失效率逐步降低进入稳定的状态。此时失效率会处于生命周期内最低，接近常数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;老化失效，随着产品使用时间变长，各零部件开始老化，到了某个时间后，各种故障频出，此时产品的失效率会迅速提高变陡峭。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;由上述三个阶段的描述，我们在设计产品时要尽可能的降低早期失效率，增加可靠性。一般设计寿命也往往在浴盆底部。&lt;/p&gt;
+&lt;h2 id=&#34;mtbf--mttf--mttr&#34;&gt;MTBF &amp;amp; MTTF &amp;amp; MTTR&lt;/h2&gt;
+&lt;p&gt;除了使用失效率来描述产品的可靠性，还可以用其它几个参数来描述可靠性程度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MTBF &lt;em&gt;Mean Time Between Failures&lt;/em&gt;&lt;/strong&gt;，平均故障间隔。指产品在操作过程中平均连续的无故障时间。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://michelfei.github.io/image/26.gif&#34; alt=&#34;MTBF&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在数学定义上，用$\theta$表示&lt;/p&gt;
+&lt;p&gt;$$
+\theta=\frac{\Sigma(downtime-uptime)}{failure \ times}=\frac{1}{\lambda}
+$$&lt;/p&gt;
+&lt;p&gt;式子中$\lambda$为失效率&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MTTF&lt;/strong&gt;,平均失效前时间。假设有$N$个产品，失效前运行时间为$T_0,T_1,\cdots T_n$，则$MTTF=\sum\limits_{i=0}^nT_i/N$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MTTR &lt;em&gt;Mean Time To Repair&lt;/em&gt;&lt;/strong&gt;为平均修复时间。它包含确认失效的时间和维护所需要的时间。&lt;/p&gt;
+&lt;p&gt;对于一个可维护的系统，MTBF，MTTF和MTTR三者之间的关系可以用如下公式表示：&lt;/p&gt;
+&lt;p&gt;$$
+MTBF=MTTF+MTTR
+$$&lt;/p&gt;
+&lt;p&gt;大部分情况下，由于MTTR远比MTTF小，所以MTBF可以近似等于MTTF。&lt;/p&gt;
+&lt;p&gt;对于一个不可恢复的系统来说MTBF没有什么意义，MTTF即可认为是平均寿命。&lt;/p&gt;
 </description>
       
     </item>
@@ -83,8 +130,12 @@ $d$：活塞杆直径，$cm$&lt;br&gt;
 $V_{max}$：气缸运动时最大速度，$mm/s$&lt;/p&gt;
 &lt;p&gt;至此，（9）和（10）就是我们得出的最后公式。我们将这两个公式与SMC给出的（1）公式比较发现：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;（9）和（1）的常数部分还是有些区别，造成这种区别的原因是ANR条件下标准大气压的取值不同造成的。SMC是按照0.102$Mpa$进行计算的，我则是按照0.101$Mpa$计算的。我是按照标准大气压四舍五入的到0.101$Mpa$，SMC给出的公式可能是进位取了偏大的值。这两个值本身很接近不必纠结，都可以用。&lt;/li&gt;
-&lt;li&gt;从机械设计手册上的公式一步步可以推到（9）和（10）两个公式，但是SMC只给了一个公式。SMC给的公式或者说（9）式适用于单杆双作用气缸、进气腔在无杆侧的单杆单作用气缸、柱塞气缸，（10）式适用于其它普通直线运动气缸，例如双杆的气缸或者进气腔在有杆侧的单作用气缸。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;（9）和（1）的常数部分还是有些区别，造成这种区别的原因是ANR条件下标准大气压的取值不同造成的。SMC是按照0.102$Mpa$进行计算的，我则是按照0.101$Mpa$计算的。我是按照标准大气压四舍五入的到0.101$Mpa$，SMC给出的公式可能是进位取了偏大的值。这两个值本身很接近不必纠结，都可以用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从机械设计手册上的公式一步步可以推到（9）和（10）两个公式，但是SMC只给了一个公式。SMC给的公式或者说（9）式适用于单杆双作用气缸、进气腔在无杆侧的单杆单作用气缸、柱塞气缸，（10）式适用于其它普通直线运动气缸，例如双杆的气缸或者进气腔在有杆侧的单作用气缸。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;以上（9）和（10）只适用于直线运动的普通气缸，对于特殊气缸而言，只要掌握计算的原理最也能得出最大耗气量，但是需要具体分析，可能需要用到微积分知识，就不在这里继续讨论了。&lt;/p&gt;
 </description>
@@ -160,38 +211,26 @@ $V_{max}$：气缸运动时最大速度，$mm/s$&lt;/p&gt;
       <guid>https://michelfei.github.io/post/2017-06-17-solidworks%E5%88%A9%E7%94%A8%E9%93%BE%E9%98%B5%E5%88%97%E8%A3%85%E9%85%8D%E6%8B%96%E9%93%BE/</guid>
       
         <description>&lt;p&gt;solidworks2015开始增加了链阵列功能，我们可以很方便的利用这个阵列进行链条和拖链的装配。利用链阵列装配的模型可以用在做动画。我下面就给出拖链装配的大致过程。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;建立基本模型&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(1) 建立基本模型&lt;/p&gt;
 &lt;p&gt;为了演示方便我就大概画了一个简易的支撑。具体的支撑方式还是看自己的实际建模为准。当然这个支撑是画了两个方块装配好的，沿着长度方向不要进行约束，其余约束就不在赘述了。
 &lt;img src=&#34;https://michelfei.github.io/image/2.png&#34; alt=&#34;1&#34;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;绘制拖链轨迹线&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(2) 绘制拖链轨迹线&lt;/p&gt;
 &lt;p&gt;新建零件模型，在&lt;strong&gt;新的零件模型&lt;/strong&gt;里绘制轨迹线草图。本文主要讲画法，所以关于拖链选型什么的不提。
 &lt;img src=&#34;https://michelfei.github.io/image/3.png&#34; alt=&#34;轨迹线&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;插入轨迹线零件&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(3) 插入轨迹线零件&lt;/p&gt;
 &lt;p&gt;将刚才的绘制的轨迹线的零件插入到总装配体中，注意需要几个基本的平行约束，保证后续链阵列不容易出错
 &lt;img src=&#34;https://michelfei.github.io/image/4.png&#34; alt=&#34;装配&#34;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;插入拖链关节&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(4) 插入拖链关节&lt;/p&gt;
 &lt;p&gt;插入拖链关节后进行约束，保证关节侧面1面和轨迹线的侧面2面平行。
 &lt;img src=&#34;https://michelfei.github.io/image/5.png&#34; alt=&#34;面&#34;&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34;&gt;
-&lt;li&gt;链阵列&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(5) 链阵列&lt;/p&gt;
 &lt;p&gt;在装配体选项菜单中有“阵零部件阵列”，总共有3种搭接方式，第二和第三种都可以用在这次拖链的装配上。但是建模过程最好要符合设计意图，所以这次我选择了第三种方式。
 首先，利用&amp;quot;selectionmanager&amp;quot;选择好轨迹线，并确认阵列方向。
 其次，根据下面的提示，选择阵列的零部件和连接的关节圆柱面。这里需要注意的是选择合适的路径对齐面，我一般选择关节零件中心对称面或者前后关节旋转的接触面。然后就完成拖链关节的基本装配部分了。
 &lt;img src=&#34;https://michelfei.github.io/image/6.png&#34; alt=&#34;阵列&#34;&gt;
 然后就完成拖链关节的基本装配部分了。
 &lt;img src=&#34;https://michelfei.github.io/image/7.png&#34; alt=&#34;关节&#34;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;插入拖链的安装关节&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;(6) 插入拖链的安装关节&lt;/p&gt;
 &lt;p&gt;其实链阵列本身的操作到上面就结束了，但是做事还是有始有终吧。把拖链的两头的安装关节插入进来进行装配。最后将一头的拖链固定约束，整个过程就完成了。但是这里会出现一点问题，有的人在这步装配的时候会发现明明配合选择没错但是还是经常出现配合错误，造成这种问题的基本原因就是，电脑不行！那怎么办呢？最好的的办法就是配合前先自己手动移动到合适位置，越接近正确越好，这样电脑计算重建模型时间会大大缩短，基本不会出现错误。
 &lt;img src=&#34;https://michelfei.github.io/image/8.png&#34; alt=&#34;最后&#34;&gt;&lt;/p&gt;
 &lt;p&gt;基本步骤以上。这种链阵列的好处就是可柔性装配，会有非常直观的效果。但是这种装配对电脑要求也不算小，静态装配可能没啥问题，要做动画了对电脑要求就高了。&lt;/p&gt;
