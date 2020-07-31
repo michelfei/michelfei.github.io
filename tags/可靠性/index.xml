@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>可靠性 on Michel&#39;s</title>
+    <link>https://michelfei.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/</link>
+    <description>Recent content in 可靠性 on Michel&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Jul 2020 13:18:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://michelfei.github.io/tags/%E5%8F%AF%E9%9D%A0%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>浴盆曲线</title>
+      <link>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</link>
+      <pubDate>Sun, 12 Jul 2020 13:18:43 +0800</pubDate>
+      
+      <guid>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</guid>
+      <description>在理解什么是浴盆曲线前先看下什么是失效率（failure rate）。 失效率failure rate为工程系统或产品失效的频率。单位为每小时失效</description>
+    </item>
+    
+  </channel>
+</rss>

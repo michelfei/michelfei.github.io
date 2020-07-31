@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Michel&#39;s</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 13:18:43 +0800</lastBuildDate>
     
 	<atom:link href="https://michelfei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浴盆曲线</title>
+      <link>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</link>
+      <pubDate>Sun, 12 Jul 2020 13:18:43 +0800</pubDate>
+      
+      <guid>https://michelfei.github.io/post/%E6%B5%B4%E7%9B%86%E6%9B%B2%E7%BA%BF/</guid>
+      <description>在理解什么是浴盆曲线前先看下什么是失效率（failure rate）。 失效率failure rate为工程系统或产品失效的频率。单位为每小时失效</description>
+    </item>
     
     <item>
       <title>气缸耗气量计算</title>
